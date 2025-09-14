@@ -1,0 +1,150 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #4a86e8;
+    outline: none;
+}
+
+.conversion-types {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.conversion-type {
+    flex: 1;
+    min-width: 120px;
+    margin: 5px;
+}
+
+.conversion-type h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.radio-group {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.radio-option {
+    margin: 8px 0;
+}
+
+.radio-option label {
+    display: inline;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+button {
+    background: #4a86e8;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    background: #3a76d8;
+}
+
+.result {
+    background: #e8f4fe;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.result h3 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#converted-temp {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2575fc;
+}
+
+.error {
+    color: #d32f2f;
+    margin-top: 5px;
+    font-size: 14px;
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .conversion-type {
+        min-width: 100%;
+        margin-bottom: 15px;
+    }
+}
